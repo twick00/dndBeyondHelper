@@ -1,20 +1,32 @@
 {
-    "manifest_version": 2,
-    "name": "Chrome Extension Starter",
-    "description": "A Chrome Extension starter kit",
-    "version": "1.0.0",
-    "browser_action": {
-        "default_icon": "icon-16.png",
-        "default_popup": "popup.html"
-    },
-    "background": {
-        "scripts": ["js/backgroundPage.js"],
-        "persistent": false
-    },
-    "icons": {
-        "16": "icon-16.png",
-        "48": "icon-48.png",
-        "128": "icon-128.png"
-    },
-    "permissions": ["tabs", "activeTab", "notifications", "http://*/", "https://*/"]
+	"manifest_version": 2,
+	"name": "Chrome Extension Starter",
+	"description": "A Chrome Extension starter kit",
+	"version": "1.0.0",
+	"content_scripts": [
+		{
+			"js": ["js/injectIndex.js"],
+			"matches": [
+				"http://www.page/you/want/to/match/*",
+				"https://www.page/you/want/to/match/*"
+			]
+		}
+	],
+	"web_accessible_resources": ["index.js"],
+	"browser_action": {
+		"default_icon": "icon-16.png",
+		"default_popup": "popup.html"
+	},
+	"icons": {
+		"16": "icon-16.png",
+		"48": "icon-48.png",
+		"128": "icon-128.png"
+	},
+	"permissions": [
+		"tabs",
+		"activeTab",
+		"notifications",
+		"http://*/",
+		"https://*/"
+	]
 }

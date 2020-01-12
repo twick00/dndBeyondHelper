@@ -1,2 +1,2 @@
-export { Debug } from "./debug";
-export { Story } from "./story";
+export { Debug } from './debug'
+export { Story } from './story'
