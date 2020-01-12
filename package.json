@@ -46,6 +46,7 @@
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
     "@types/react-test-renderer": "^16.9.1",
+    "@types/showdown": "^1.9.3",
     "@typescript-eslint/eslint-plugin": "^2.14.0",
     "@typescript-eslint/parser": "^2.14.0",
     "awesome-typescript-loader": "^5.2.1",
@@ -57,6 +58,7 @@
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.17.0",
+    "glob": "^7.1.6",
     "jest": "^24.9.0",
     "jest-css-modules": "^2.1.0",
     "node-sass": "^4.13.0",
@@ -77,6 +79,7 @@
     "bootstrap": "^4.4.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-test-renderer": "^16.12.0"
+    "react-test-renderer": "^16.12.0",
+    "showdown": "^1.9.1"
   }
 }

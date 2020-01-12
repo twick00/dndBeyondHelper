@@ -7,8 +7,8 @@
 		{
 			"js": ["js/injectIndex.js"],
 			"matches": [
-				"http://www.page/you/want/to/match/*",
-				"https://www.page/you/want/to/match/*"
+				"http://www.dndbeyond.com/profile/*/characters/*",
+				"https://www.dndbeyond.com/profile/*/characters/*"
 			]
 		}
 	],
